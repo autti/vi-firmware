@@ -89,3 +89,10 @@ Licensed under the BSD license.
 This repository includes links to other source code repositories (as git
 submodules) that may be distributed under different licenses. See those
 individual repositories for more details.
+
+Brillo
+======
+
+openxc-generate-firmware-code -m src/fusion.json >> src/signals.cpp
+
+MSD_ENABLE=0 TEST_MODE_ONLY=0 TRANSMITTER=0 DEFAULT_ALLOW_RAW_WRITE_UART=1 DEFAULT_POWER_MANAGEMENT=SILENT_CAN DEFAULT_METRICS_STATUS=0 DEFAULT_CAN_ACK_STATUS=0 DEFAULT_ALLOW_RAW_WRITE_NETWORK=1 DEBUG=0 DEFAULT_LOGGING_OUTPUT=OFF BOOTLOADER=1 DEFAULT_USB_PRODUCT_ID=1 NETWORK=0 DEFAULT_OUTPUT_FORMAT=JSON DEFAULT_FILE_GENERATE_SECS=180 ENVIRONMENT_MODE=default_mode DEFAULT_RECURRING_OBD2_REQUESTS_STATUS=0 PLATFORM=FORDBOARD DEFAULT_ALLOW_RAW_WRITE_USB=1 DEFAULT_EMULATED_DATA_STATUS=0 DEFAULT_OBD2_BUS=1 make -j4

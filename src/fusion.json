@@ -1,0 +1,17 @@
+{   "buses": {
+        "hscar": {
+            "controller": 1,
+            "speed": 500000,
+            "raw_can_mode": "unfiltered",
+            "raw_writable": true,
+            "max_message_frequency": 1,
+            "force_send_changed": true
+        },
+        "hscamera": {
+            "controller": 2,
+            "speed": 500000,
+            "raw_can_mode": "unfiltered",
+            "raw_writable": true
+        }
+}
+}
